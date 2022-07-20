@@ -1,1 +1,1 @@
-# Geomarketing
+# Spatial Feature Engineering for Geomarketing
