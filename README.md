@@ -43,6 +43,10 @@ PySAL [spaghetti](https://pysal.org/spaghetti/index.html) module also provides v
 
 ## Geocoding
 
+In some cases reverse geocoding can provide useful features. It can be done using [GeoPy](https://geopy.readthedocs.io/en/stable/) or [reverse geocoder](https://github.com/thampiman/reverse-geocoder). Physical address can be used to generate categorical features (country, city, district, street) or can be treated as [text data](https://github.com/Denikozub/Geomarketing/blob/main/README.md#text-data).  
+
+Another categorical feature, representing spatial proximity, is geohash, which is a unique identifier of a specific region on the Earth. It can be computed using [geohash](https://github.com/vinsci/geohash/) library.
+
 ## Text data
 
 ## Feature importance
