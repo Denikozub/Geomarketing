@@ -6,6 +6,8 @@ This is called spatial feature engineering. In this guide I mainly focus on geom
 
 * [Spatial weights](https://github.com/Denikozub/Geomarketing/blob/main/README.md#spatial-weights)
 * [Geostatistics](https://github.com/Denikozub/Geomarketing/blob/main/README.md#geostatistics)
+  * [Basic features](https://github.com/Denikozub/Geomarketing/edit/main/README.md#basic-features)
+  * [Advanced features](https://github.com/Denikozub/Geomarketing/edit/main/README.md#advanced-features-and-objects)
 * [Network analysis](https://github.com/Denikozub/Geomarketing/blob/main/README.md#network-analysis)
 * [Geocoding](https://github.com/Denikozub/Geomarketing/blob/main/README.md#geocoding)
 * [Text data](https://github.com/Denikozub/Geomarketing/blob/main/README.md#text-data)
@@ -21,6 +23,24 @@ Spatial relationships, represented in weights, can be defined in different ways.
 For better understanding on the methods I recommend reading [this](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/modeling-spatial-relationships.htm) article by ArcGIS.
 
 ## Geostatistics
+
+### Basic features
+
+1. Counting nearby objects (e.g. competitors) - [buffer](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.buffer.html) + [clip](https://geopandas.org/en/stable/docs/reference/api/geopandas.clip.html)
+2. Distance to key objects (e.g. city center or feature hotspot - see below)
+    * Haversine distance
+    * Manhattan distance with haversine formula
+3. Distance to closest object (e.g. storage, shopping center or bus stop)
+
+### Advanced features and objects
+
+1. Local spatial autocorrelation
+    * [Local Moran](https://pysal.org/esda/generated/esda.Moran_Local.html#esda.Moran_Local)
+    * [Local G](https://pysal.org/esda/generated/esda.G_Local.html#esda.G_Local)
+    * [Local Geary](https://pysal.org/esda/generated/esda.Geary_Local.html#esda.Geary_Local)
+    * [Local join counts](https://pysal.org/esda/generated/esda.Join_Counts_Local.html#esda.Join_Counts_Local) (for binary features)
+2. [Shape measures](https://pysal.org/esda/notebooks/shape-measures.html) for polygonal objects
+3. [Silhouette samples](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_samples.html)
 
 ## Network analysis
 
