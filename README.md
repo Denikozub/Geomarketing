@@ -7,11 +7,12 @@ This is called spatial feature engineering. In this guide I mainly focus on geom
 * [Spatial weights](https://github.com/Denikozub/Geomarketing/blob/main/README.md#spatial-weights)
 * [Geostatistics](https://github.com/Denikozub/Geomarketing/blob/main/README.md#geostatistics)
   * [Basic features](https://github.com/Denikozub/Geomarketing/edit/main/README.md#basic-features)
-  * [Advanced features](https://github.com/Denikozub/Geomarketing/edit/main/README.md#advanced-features-and-objects)
+  * [Advanced features](https://github.com/Denikozub/Geomarketing/edit/main/README.md#advanced-features)
 * [Network analysis](https://github.com/Denikozub/Geomarketing/blob/main/README.md#network-analysis)
 * [Geocoding](https://github.com/Denikozub/Geomarketing/blob/main/README.md#geocoding)
 * [Text data](https://github.com/Denikozub/Geomarketing/blob/main/README.md#text-data)
 * [Feature importance](https://github.com/Denikozub/Geomarketing/blob/main/README.md#feature-importance)
+* [References](https://github.com/Denikozub/Geomarketing/edit/main/README.md#references)
 
 ## Spatial weights
 
@@ -37,7 +38,7 @@ For better understanding on the methods I recommend reading [this](https://pro.a
 7. [Building intensity](http://docs.momepy.org/en/stable/api.html#intensity)
 8. Neighbouring-based diversity indices ([momepy](http://docs.momepy.org/en/stable/api.html#diversity))
 
-### Advanced features and objects
+### Advanced features
 
 1. Local spatial autocorrelation (cluster and outlier analysis)
     * [Local Moran](https://pysal.org/esda/generated/esda.Moran_Local.html#esda.Moran_Local)
@@ -84,3 +85,10 @@ Another categorical feature, representing spatial proximity, is geohash, which i
 ## Text data
 
 ## Feature importance
+
+## References
+
+1. [ArcGIS](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/spatial-statistics-toolbox-sample-applications.htm) documentation
+2. [GeoDa](https://geodacenter.github.io/documentation.html) documentation
+3. [PySAL](https://pysal.org/) library
+4. Feature engineering [chapter](https://geographicdata.science/book/notebooks/12_feature_engineering.html)
