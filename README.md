@@ -11,7 +11,6 @@ This is called spatial feature engineering. In this guide I mainly focus on geom
 * [Network analysis](https://github.com/Denikozub/Geomarketing/blob/main/README.md#network-analysis)
 * [Geocoding](https://github.com/Denikozub/Geomarketing/blob/main/README.md#geocoding)
 * [Text data](https://github.com/Denikozub/Geomarketing/blob/main/README.md#text-data)
-* [Feature importance](https://github.com/Denikozub/Geomarketing/blob/main/README.md#feature-importance)
 * [References](https://github.com/Denikozub/Geomarketing/edit/main/README.md#references)
 
 ## Spatial weights
@@ -84,11 +83,12 @@ Another categorical feature, representing spatial proximity, is geohash, which i
 
 ## Text data
 
-## Feature importance
+Text data can also be used for feature engineering. This has nothing to do with spatial data analysis, but I want to cover the majority of topics in this guide.
+One way to utilize text data is to generate categorical data by parsing text using separators or regular expressions. A different approach involves using [word2vec](https://en.wikipedia.org/wiki/Word2vec) word embeddings for a single word. If you have a phrase of multiple words, it is worth taking average of word embeddings or (more precisely) average of word embeddings multiplied by their TF-IDF score. A complete different approach involves using [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)) text embeddings as features.
 
 ## References
 
 1. [ArcGIS](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/spatial-statistics-toolbox-sample-applications.htm) documentation
 2. [GeoDa](https://geodacenter.github.io/documentation.html) documentation
 3. [PySAL](https://pysal.org/) library
-4. Feature engineering [chapter](https://geographicdata.science/book/notebooks/12_feature_engineering.html)
+4. [Geographic Data Science with Python](https://geographicdata.science/book/intro.html)
