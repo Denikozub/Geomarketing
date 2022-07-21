@@ -27,20 +27,34 @@ For better understanding on the methods I recommend reading [this](https://pro.a
 ### Basic features
 
 1. Counting nearby objects (e.g. competitors) - [buffer](https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoSeries.buffer.html) + [clip](https://geopandas.org/en/stable/docs/reference/api/geopandas.clip.html)
-2. Distance to key objects (e.g. city center or feature hotspot - see below)
+2. Distance to key objects (e.g. [feature center](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/mean-center.htm), [central feature](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/central-feature.htm) or [feature hotspot](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/hot-spot-analysis.htm))
     * Haversine distance
     * Manhattan distance with haversine formula
 3. Distance to closest object (e.g. storage, shopping center or bus stop)
+4. [Spatial lag](http://docs.momepy.org/en/stable/generated/momepy.WeightedCharacter.html#momepy.WeightedCharacter) - feature neighbour-weighted average
+5. Building areas, perimeters and volumes ([momepy](http://docs.momepy.org/en/stable/api.html#dimension))
+6. Building alignment, adjacency, shared walls ([momepy](http://docs.momepy.org/en/stable/api.html#spatial-distribution))
+7. [Building intensity](http://docs.momepy.org/en/stable/api.html#intensity)
+8. Neighbouring-based diversity indices ([momepy](http://docs.momepy.org/en/stable/api.html#diversity))
 
 ### Advanced features and objects
 
-1. Local spatial autocorrelation
+1. Local spatial autocorrelation (cluster and outlier analysis)
     * [Local Moran](https://pysal.org/esda/generated/esda.Moran_Local.html#esda.Moran_Local)
     * [Local G](https://pysal.org/esda/generated/esda.G_Local.html#esda.G_Local)
     * [Local Geary](https://pysal.org/esda/generated/esda.Geary_Local.html#esda.Geary_Local)
     * [Local join counts](https://pysal.org/esda/generated/esda.Join_Counts_Local.html#esda.Join_Counts_Local) (for binary features)
-2. [Shape measures](https://pysal.org/esda/notebooks/shape-measures.html) for polygonal objects
-3. [Silhouette samples](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_samples.html)
+2. [Shape measures](https://pysal.org/esda/notebooks/shape-measures.html) and [urban shape measures](http://docs.momepy.org/en/stable/api.html#shape) for polygonal objects
+3. [Spatial accessibility metrics](https://access.readthedocs.io/en/latest/api.html)
+4. Clustering
+    * [AZP](https://pysal.org/spopt/generated/spopt.region.AZP.html#spopt.region.AZP) (automatic zoning procedure)
+    * [Bottom-up agglomerative](https://pysal.org/spopt/generated/spopt.region.WardSpatial.html#spopt.region.WardSpatial)
+    * [Regional K-Means](https://pysal.org/spopt/generated/spopt.region.RegionKMeansHeuristic.html#spopt.region.RegionKMeansHeuristic)
+    * [A-DBSCAN](https://pysal.org/esda/generated/esda.adbscan.ADBSCAN.html#esda.adbscan.ADBSCAN)
+    * [Multivariate](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-statistics/multivariate-clustering.htm)
+5. Location set covering problem ([LSCP](https://pysal.org/spopt/generated/spopt.locate.coverage.LSCP.html#spopt.locate.coverage.LSCP))
+6. [Silhouette samples](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_samples.html)
+7. [Distance-preserving dimensionality reduction](https://geodacenter.github.io/workbook/7ab_mds/lab7ab.html)
 
 ## Network analysis
 
