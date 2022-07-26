@@ -90,7 +90,7 @@ One way to utilize text data is to generate categorical data by parsing text usi
 
 ## Geospatial models
 
-There are machine learning models that do not require any spatial feature engineering at all. They understand spatial relationships along with attributive information and can be a pipeline for quick metrics estimation, a good start for hypothesis testing or initial data overview:
+There are machine learning models that do not require any spatial feature engineering at all. They understand spatial relationships along with attributive information and can be a pipeline for quick metrics estimation, a good start for hypothesis testing or initial data overview. Since most models are linear, it is worth using feature transformations (log, power).
 
 * [Geographically weighted regression (GWR)](https://mgwr.readthedocs.io/en/latest/generated/mgwr.gwr.GWR.html#mgwr.gwr.GWR)
 * [Multiscale GWR (MGWR)](https://mgwr.readthedocs.io/en/latest/generated/mgwr.gwr.MGWR.html#mgwr.gwr.MGWR)
